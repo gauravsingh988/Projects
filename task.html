@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task</title>
+</head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style type="text/css">
+.right{background: red;height: 50px;clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);}
+.left{height: 50px;background: red;margin-left: 5px;clip-path: polygon(0% 0%, 93% 0%, 100% 50%, 93% 100%, 0% 100%);}
+.table td, .table th {padding: .75rem;vertical-align: top;border: 2px solid #fff;background: #b8b6b6;width: 200px;}
+.bg-white{background-color: #fff;}
+.next-button{background-color:#34712B;padding: 10px 60px;border-radius: 0px;}
+</style>
+<script>
+function fill_button_color(id,row_name)
+{
+if(id==4)
+{
+color_name ='#C0EE66';
+}
+else if(id==2)
+{
+color_name='#E5AEBE';
+}
+else if(id==3){
+color_name ='#FBF53C';
+}
+else if(id==1){
+color_name ='#8BD7F1';
+}
+else if(id==5){
+color_name ='#34712B';
+}
+
+for (i = 1; i <= id; i++) {
+
+color_id = '#'+row_name+i;
+$(color_id).css("background-color",color_name);
+}
+for (j = id+1; j<=5; j++) {
+
+color_id = '#'+row_name+j;
+$(color_id).css("background-color", "");
+}
+}
+
+</script>
+<div class="container text-center my-5">
+  <table class="table">
+    <thead>
+     <tr><h5 class="py-2">Responsiveness</h5></tr>
+      <tr>
+        <td class="bg-white" scope="col">Extremely Bad</td>
+        <td class="bg-white" scope="col">Bad</td>
+        <td class="bg-white" scope="col">Neutral</td>
+        <td class="bg-white" scope="col">Good</td>
+        <td class="bg-white" scope="col">Extremely Good</td>
+      </tr>
+      <tr>
+        <td scope="col" class="right" id='row11' onmouseover='fill_button_color(1,"row1")'></td>
+        <td scope="col" id='row12' onmouseover='fill_button_color(2,"row1")'></td>
+        <td scope="col" id='row13' onmouseover='fill_button_color(3,"row1")'></td>
+        <td scope="col" id='row14' onmouseover='fill_button_color(4,"row1")'></td>
+        <td scope="col" class="left" id='row15' onmouseover='fill_button_color(5,"row1")'></td>
+      </tr>
+    </thead>
+  </table>
+  <table class="table">
+    <thead>
+      <tr><h5 class="py-2">Competency in Advising Right Solutions</h5></tr>
+       <tr>
+        <td class="bg-white" scope="col">Extremely Bad</td>
+        <td class="bg-white" scope="col">Bad</td>
+        <td class="bg-white" scope="col">Neutral</td>
+        <td class="bg-white" scope="col">Good</td>
+        <td class="bg-white" scope="col">Extremely Good</td>
+      </tr>
+      <tr>
+        <td scope="col" class="right" id='row21' onmouseover='fill_button_color(1,"row2")'></td>
+        <td scope="col" id='row22' onmouseover='fill_button_color(2,"row2")'></td>
+        <td scope="col" id='row23' onmouseover='fill_button_color(3,"row2")'></td>
+        <td scope="col" id='row24' onmouseover='fill_button_color(4,"row2")'></td>
+        <td scope="col" class="left" id='row25' onmouseover='fill_button_color(5,"row2")'></td>
+      </tr>
+    </thead>
+  </table>
+  <table class="table">
+    <thead>
+      <tr><h5 class="py-2">Trustworthiness</h5></tr>
+      <tr>
+        <td class="bg-white" scope="col" >Extremely Bad</td>
+        <td class="bg-white" scope="col" >Bad</td>
+        <td class="bg-white" scope="col" >Neutral</td>
+        <td class="bg-white" scope="col" >Good</td>
+        <td class="bg-white" scope="col" >Extremely Good</td>
+      </tr>
+      <tr>
+        <td scope="col" class="right" id='row31' onmouseover='fill_button_color(1,"row3")'></td>
+        <td scope="col" id='row32' onmouseover='fill_button_color(2,"row3")'></td>
+        <td scope="col" id='row33' onmouseover='fill_button_color(3,"row3")'></td>
+        <td scope="col" id='row34' onmouseover='fill_button_color(4,"row3")'></td>
+        <td scope="col" class="left" id='row35' onmouseover='fill_button_color(5,"row3")'></td>
+      </tr>
+    </thead>
+  </table>
+    <table class="table">
+    <thead>
+      <tr><h5 class="py-2">Customer and Service Support</h5></tr>
+      <tr>
+        <td class="bg-white" scope="col" >Extremely Bad</td>
+        <td class="bg-white" scope="col" >Bad</td>
+        <td class="bg-white" scope="col" >Neutral</td>
+        <td class="bg-white" scope="col" >Good</td>
+        <td class="bg-white" scope="col" >Extremely Good</td>
+      </tr>
+      <tr>
+        <td scope="col" class="right" id='row41' onmouseover='fill_button_color(1,"row4")'></td>
+        <td scope="col" id='row42' onmouseover='fill_button_color(2,"row4")'></td>
+        <td scope="col" id='row43' onmouseover='fill_button_color(3,"row4")'></td>
+        <td scope="col" id='row44' onmouseover='fill_button_color(4,"row4")'></td>
+        <td scope="col" class="left" id='row45' onmouseover='fill_button_color(5,"row4")'></td>
+      </tr>
+    </thead>
+  </table>
+  <div class="text-center">
+      <button class="btn next-button text-center text-white my-5">NEXT</button>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
